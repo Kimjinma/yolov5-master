@@ -1,70 +1,62 @@
 # YOLOv5-Based Object Detection for Real-Time Object Recognition
 
 ## Project Overview
-This project leverages YOLOv5, a deep learning-based object detection model, to analyze video data and detect objects in real-time. Object detection technology enables the identification and tracking of specific objects (e.g., blankets, furniture) within video frames efficiently and accurately.
+This project utilizes YOLOv5, a deep learning-based object detection model, to analyze video data and implement real-time object detection. The technology identifies and tracks specific objects (e.g., blankets, furniture) efficiently and accurately within video frames.
 
 ### Key Steps:
-1. **Video Data Collection:** Use videos such as `TEST1.mp4`, `TEST2.mp4`, etc.
-2. **YOLOv5 Model Training:** Enhance detection accuracy using a pre-trained YOLOv5 model.
-![image](https://github.com/user-attachments/assets/5f59f655-68ee-440d-8304-a6b2bd6436bf)
-
-
-4. **Object Detection:** Analyze videos to store and visualize detected object information.
-![image](https://github.com/user-attachments/assets/954c8a76-c9aa-4734-9d31-10bb7ac72f4b)
-
-
-6. **Webcam Detection:** Detect objects in real-time from live video feeds.
-![image](https://github.com/user-attachments/assets/17f6f299-66f3-405f-b310-03ae3b5c13d5)
-
+1. **Video Data Collection:** Gather videos such as `TEST1.mp4`, `TEST2.mp4`, etc.
+2. **YOLOv5 Model Training:** Improve detection accuracy using a pre-trained YOLOv5 model.
+3. **Object Detection:** Analyze videos to store and visualize detected object information.
+4. **Webcam Detection:** Perform real-time object detection from live video feeds.
 
 ## Background Information
 ### Necessity of Robot Vacuums
-Robot vacuums have become essential household appliances, reducing the burden of domestic chores. Efficient obstacle avoidance and focused cleaning on specific areas are critical features.
+Robot vacuums have become essential in reducing domestic chores. Efficient obstacle avoidance and focused cleaning on specific areas are critical features.
 
 ### Role of Object Detection
-Conventional robot vacuums rely on basic sensors, which limit their ability to recognize obstacles effectively or navigate complex environments. YOLOv5's object detection capabilities can enable adaptive behaviors in robot vacuums.
+Traditional robot vacuums rely on basic sensors, limiting their ability to recognize obstacles or navigate complex environments effectively. YOLOv5’s object detection capabilities enable adaptive and intelligent behaviors in robot vacuums.
 
 ### YOLOv5 Features
-YOLOv5 is a lightweight deep learning model suitable for real-time object detection. It performs efficiently on both GPUs and CPUs, making it adaptable for hardware-limited platforms like robot vacuums.
+YOLOv5 is a lightweight model suitable for real-time object detection. It operates efficiently on both GPUs and CPUs, making it adaptable for hardware-limited devices like robot vacuums.
 
 ## Project Objectives
-1. **Obstacle and Object Detection:** Design a system where a robot vacuum can detect obstacles and specific objects (e.g., chairs, tables, toys).
-2. **Dynamic Navigation:** Enable adaptive cleaning paths and focused cleaning around detected objects.
+1. **Obstacle and Object Detection:** Design a system enabling a robot vacuum to detect obstacles and specific objects (e.g., chairs, tables, toys).
+2. **Dynamic Navigation:** Facilitate adaptive cleaning paths and focused cleaning around detected objects.
 
 ## Project Phases
-1. **Data Collection:** Capture images and videos in diverse environments where robot vacuums operate.
-2. **Data Labeling:** Use tools like DarkLabel for annotating objects in the dataset.
-3. **YOLOv5 Model Training:** Train the YOLOv5 model using the labeled dataset.
-4. **Object Detection Implementation:** Deploy the trained model to detect objects in videos and real-time streams.
+1. **Data Collection:** Record images and videos from diverse environments where robot vacuums operate.
+2. **Data Labeling:** Use tools like DarkLabel to annotate objects in the dataset.
+3. **YOLOv5 Model Training:** Train YOLOv5 using the labeled dataset.
+4. **Object Detection Implementation:** Deploy the trained model to detect objects in videos and live streams.
 
 ## Project Strengths
-1. **Real-Time Obstacle Avoidance:** YOLOv5 enables efficient real-time obstacle detection and path optimization.
-2. **Targeted Object Detection:** Focused cleaning or avoidance around specific objects (e.g., toys, cables).
-3. **Broad Applicability:** Applicable in households, offices, factories, and other environments to enhance robot vacuum performance.
+1. **Real-Time Obstacle Avoidance:** Efficient real-time detection and path optimization through YOLOv5.
+2. **Targeted Object Detection:** Enable focused cleaning or avoidance around specific objects (e.g., toys, cables).
+3. **Broad Applicability:** Enhances robot vacuum performance in households, offices, factories, and more.
 
 ## Project Significance
-1. **Advancing Smart Homes:** The project aligns with IoT and AI integration trends in smart home environments.
-2. **Improving Efficiency:** Enhances performance compared to sensor-based robot vacuums.
-3. **Industry Potential:** The approach can extend beyond robot vacuums to warehouse and logistics robots.
+1. **Advancing Smart Homes:** Aligns with IoT and AI trends in smart home environments.
+2. **Improving Efficiency:** Outperforms traditional sensor-based robot vacuums in navigation and cleaning efficiency.
+3. **Industry Potential:** Applicable to warehouse and logistics robots beyond vacuum cleaners.
 
 ## Challenges
 1. **Data Scarcity:** Limited datasets with diverse environments and objects may restrict model performance.
-2. **Model Optimization:** While YOLOv5 is efficient, further optimization is necessary for hardware-constrained platforms like robot vacuums.
+2. **Model Optimization:** YOLOv5 requires additional optimization for hardware-constrained platforms like robot vacuums.
 
 ## Literature Review
 ### Overview of YOLOv5
-YOLO (You Only Look Once) is a state-of-the-art object detection algorithm. YOLOv5 offers significant improvements in lightweight architecture and detection accuracy.
+YOLO (You Only Look Once) is a leading object detection algorithm. YOLOv5 features significant improvements in efficiency and accuracy.
 
 ### Robot Vacuum Case Studies
-Existing products like iRobot's Roomba and LG CordZero primarily rely on IR sensors and cameras. Incorporating object detection can overcome their limitations.
+Existing products like iRobot’s Roomba and LG CordZero rely on IR sensors and cameras. Incorporating object detection addresses their limitations.
 
 ## Data Acquisition
-1. **Video Capture:** Use smartphones to record robot vacuum environments (e.g., living rooms, kitchens).
-2. **DarkLabel Annotation:** Label objects such as chairs, tables, and obstacles in the collected data.
+1. **Video Capture:** Use smartphones to record environments (e.g., living rooms, kitchens) for robot vacuums.
+2. **DarkLabel Annotation:** Annotate objects such as chairs, tables, and obstacles in the collected videos.
 
 ## Training on NVIDIA Jetson Nano
 ### Setup and Configuration
-1. **Jetson Nano Configuration:** Install JetPack SDK, which includes CUDA, cuDNN, and TensorRT.
+1. **Jetson Nano Configuration:** Install JetPack SDK, including CUDA, cuDNN, and TensorRT.
 2. **Library Installation:**
    ```bash
    sudo apt-get update
@@ -73,7 +65,7 @@ Existing products like iRobot's Roomba and LG CordZero primarily rely on IR sens
    pip3 install -r requirements.txt
    ```
 
-3. **YOLOv5 Setup:** Clone the YOLOv5 repository and set up the environment.
+3. **YOLOv5 Setup:** Clone the YOLOv5 repository and configure the environment.
    ```bash
    git clone https://github.com/ultralytics/yolov5
    ```
@@ -91,15 +83,15 @@ Existing products like iRobot's Roomba and LG CordZero primarily rely on IR sens
   ```
 
 ### Model Training
-1. Train YOLOv5 on Jetson Nano:
+Train YOLOv5 on Jetson Nano:
    ```bash
    python3 train.py --data data.yaml --cfg yolov5s.yaml --weights yolov5s.pt --batch-size 8 --epochs 20
    ```
    **Parameters:**
    - `--data`: Path to dataset configuration.
-   - `--cfg`: Model configuration file (use `yolov5s.yaml` for lightweight models).
+   - `--cfg`: Model configuration file (e.g., `yolov5s.yaml`).
    - `--weights`: Pre-trained weights file.
-   - `--batch-size`: Adjust for Jetson Nano's memory.
+   - `--batch-size`: Adjust for Jetson Nano’s memory capacity.
    - `--epochs`: Number of training iterations.
 
 ### Object Detection Execution
