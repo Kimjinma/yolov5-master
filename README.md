@@ -6,8 +6,16 @@ This project utilizes YOLOv5, a deep learning-based object detection model, to a
 ### Key Steps:
 1. **Video Data Collection:** Gather videos such as `TEST1.mp4`, `TEST2.mp4`, etc.
 2. **YOLOv5 Model Training:** Improve detection accuracy using a pre-trained YOLOv5 model.
-3. **Object Detection:** Analyze videos to store and visualize detected object information.
-4. **Webcam Detection:** Perform real-time object detection from live video feeds.
+   ![image](https://github.com/user-attachments/assets/44fa0732-61aa-4162-b30d-6e39d9d270b6)
+
+4. **Object Detection:** Analyze videos to store and visualize detected object information.
+   ![image](https://github.com/user-attachments/assets/01cb4224-8e08-43bb-bf93-ce6ab153db28)
+
+5. **Webcam Detection:** Perform real-time object detection from live video feeds.
+   ![image](https://github.com/user-attachments/assets/d83a74a1-da9d-41fd-91eb-683a13ae973a)
+   ![image](https://github.com/user-attachments/assets/c88832a7-fb14-4009-b7d2-7ed3754b82c4)
+![image](https://github.com/user-attachments/assets/ad5a0244-6b48-4689-bc0b-74c8b4b22a9f)
+
 
 ## Background Information
 ### Necessity of Robot Vacuums
@@ -53,9 +61,11 @@ Existing products like iRobot’s Roomba and LG CordZero rely on IR sensors and 
 ## Data Acquisition
 1. **Video Capture:** Use smartphones to record environments (e.g., living rooms, kitchens) for robot vacuums.
 2. **DarkLabel Annotation:** Annotate objects such as chairs, tables, and obstacles in the collected videos.
+   ![image](https://github.com/user-attachments/assets/af7ea716-5cc2-41a2-beea-a0f0bbdc425d)
+
 
 ## Training on NVIDIA Jetson Nano
-### Setup and Configuration
+ Setup and Configuration
 1. **Jetson Nano Configuration:** Install JetPack SDK, including CUDA, cuDNN, and TensorRT.
 2. **Library Installation:**
    ```bash
@@ -70,7 +80,7 @@ Existing products like iRobot’s Roomba and LG CordZero rely on IR sensors and 
    git clone https://github.com/ultralytics/yolov5
    ```
 
-### Dataset Preparation
+ Dataset Preparation
 - Upload labeled datasets (annotated with DarkLabel) to Jetson Nano.
 - Create a `data.yaml` file:
   ```yaml
@@ -82,7 +92,7 @@ Existing products like iRobot’s Roomba and LG CordZero rely on IR sensors and 
   names: ['pixel']
   ```
 
-### Model Training
+ Model Training
 Train YOLOv5 on Jetson Nano:
    ```bash
    python3 train.py --data data.yaml --cfg yolov5s.yaml --weights yolov5s.pt --batch-size 8 --epochs 20
@@ -95,21 +105,33 @@ Train YOLOv5 on Jetson Nano:
    - `--epochs`: Number of training iterations.
 
 ### Object Detection Execution
-1. **Real-Time Detection with Webcam:**
+1. **Real-Time Detection with Webcam:
    ```bash
    python3 detect.py --source 0 --weights runs/train/expX/weights/best.pt --img 640 --conf-thres 0.5
    ```
-2. **Video File Detection:**
+2. **Video File Detection:
    ```bash
    python3 detect.py --source TEST1.mp4 --weights runs/train/expX/weights/best.pt --img 640 --conf-thres 0.5
    ```
 
 ## Evaluation Metrics
-1. **Confusion Matrix**
-2. **F1-Confidence Curve**
-3. **Precision-Recall Curve**
+1. **Confusion Matrix
+   ![image](https://github.com/user-attachments/assets/51fb1060-c686-4033-ba0e-d28d763f3016)
+
+2. **F1-Confidence Curve
+   ![image](https://github.com/user-attachments/assets/aa6a47a4-1057-43e4-b48a-3c58cceec625)
+
+3. **Precision-Recall Curve
+ ![image](https://github.com/user-attachments/assets/9c93c11e-e3ae-4f12-941e-b0db41c1b7cf)
+
 4. **Precision-Confidence Curve**
+ ![image](https://github.com/user-attachments/assets/108b809f-60b8-4db8-803e-c3aa83f3aa7d)
+
 5. **Labels Correlogram**
+ ![image](https://github.com/user-attachments/assets/2082ef72-fe84-4655-8363-300f79c7429c)
+
+6. **results**
+![image](https://github.com/user-attachments/assets/b95dcf10-d220-4695-9f2a-5442a3e829a8)
 
 ## Validation
 1. **Testing on New Data:** Use `TEST1.mp4` to `TEST4.mp4` for validation.
