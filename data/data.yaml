@@ -1,0 +1,14 @@
+train: D:\yolov5-master\yolov5-master\data\train\images
+val: D:\yolov5-master\yolov5-master\data\valid\images
+
+test: D:\yolov5-master\yolov5-master\data\test\images
+
+nc: 1
+names: ['pixel']
+
+roboflow:
+  workspace: pixel-data
+  project: pixel-detector
+  version: 23
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/pixel-data/pixel-detector/dataset/23
