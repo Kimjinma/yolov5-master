@@ -6,8 +6,11 @@ This project leverages YOLOv5, a deep learning-based object detection model, to 
 ### Key Steps:
 1. **Video Data Collection:** Use videos such as `TEST1.mp4`, `TEST2.mp4`, etc.
 2. **YOLOv5 Model Training:** Enhance detection accuracy using a pre-trained YOLOv5 model.
-3. **Object Detection:** Analyze videos to store and visualize detected object information.
-4. **Webcam Detection:** Detect objects in real-time from live video feeds.
+![image](https://github.com/user-attachments/assets/5f59f655-68ee-440d-8304-a6b2bd6436bf)
+
+
+4. **Object Detection:** Analyze videos to store and visualize detected object information.
+5. **Webcam Detection:** Detect objects in real-time from live video feeds.
 
 ## Background Information
 ### Necessity of Robot Vacuums
