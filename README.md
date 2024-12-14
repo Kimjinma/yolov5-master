@@ -128,10 +128,12 @@ Train YOLOv5 on Jetson Nano:
  ![image](https://github.com/user-attachments/assets/108b809f-60b8-4db8-803e-c3aa83f3aa7d)
 
 5. **Labels Correlogram**
- ![image](https://github.com/user-attachments/assets/2082ef72-fe84-4655-8363-300f79c7429c)
+![image](https://github.com/user-attachments/assets/32bead1a-b01f-4c6f-85a8-83d566f3df7f)
+
 
 6. **results**
-![image](https://github.com/user-attachments/assets/b95dcf10-d220-4695-9f2a-5442a3e829a8)
+![image](https://github.com/user-attachments/assets/ab30db13-4ad8-44bd-98e2-0b97e93a69a0)
+
 
 ## Validation
 1. **Testing on New Data:** Use `TEST1.mp4` to `TEST4.mp4` for validation.
