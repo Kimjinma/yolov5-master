@@ -13,8 +13,8 @@ This project utilizes YOLOv5, a deep learning-based object detection model, to a
 
 5. **Webcam Detection:** Perform real-time object detection from live video feeds.
    ![image](https://github.com/user-attachments/assets/d83a74a1-da9d-41fd-91eb-683a13ae973a)
-   ![image](https://github.com/user-attachments/assets/c88832a7-fb14-4009-b7d2-7ed3754b82c4)
-![image](https://github.com/user-attachments/assets/ad5a0244-6b48-4689-bc0b-74c8b4b22a9f)
+  
+
 
 
 ## Background Information
@@ -116,22 +116,27 @@ Train YOLOv5 on Jetson Nano:
 
 ## Evaluation Metrics
 1. **Confusion Matrix
+   
    ![image](https://github.com/user-attachments/assets/51fb1060-c686-4033-ba0e-d28d763f3016)
 
-2. **F1-Confidence Curve
+3. **F1-Confidence Curve
+   
    ![image](https://github.com/user-attachments/assets/aa6a47a4-1057-43e4-b48a-3c58cceec625)
 
-3. **Precision-Recall Curve
+5. **Precision-Recall Curve
+   
  ![image](https://github.com/user-attachments/assets/9c93c11e-e3ae-4f12-941e-b0db41c1b7cf)
 
-4. **Precision-Confidence Curve**
+7. **Precision-Confidence Curve**
+   
  ![image](https://github.com/user-attachments/assets/108b809f-60b8-4db8-803e-c3aa83f3aa7d)
 
-5. **Labels Correlogram**
+9. **Labels Correlogram**
+    
 ![image](https://github.com/user-attachments/assets/32bead1a-b01f-4c6f-85a8-83d566f3df7f)
 
-
-6. **results**
+11. **results**
+    
 ![image](https://github.com/user-attachments/assets/ab30db13-4ad8-44bd-98e2-0b97e93a69a0)
 
 
