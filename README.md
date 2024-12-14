@@ -10,7 +10,12 @@ This project leverages YOLOv5, a deep learning-based object detection model, to 
 
 
 4. **Object Detection:** Analyze videos to store and visualize detected object information.
-5. **Webcam Detection:** Detect objects in real-time from live video feeds.
+![image](https://github.com/user-attachments/assets/954c8a76-c9aa-4734-9d31-10bb7ac72f4b)
+
+
+6. **Webcam Detection:** Detect objects in real-time from live video feeds.
+![image](https://github.com/user-attachments/assets/17f6f299-66f3-405f-b310-03ae3b5c13d5)
+
 
 ## Background Information
 ### Necessity of Robot Vacuums
